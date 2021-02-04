@@ -6,6 +6,7 @@
 /log/
 /lib/
 /etc/ivy/ivy.jar
+/etc/launcher-configuration.ini
 /service/
 /out/
 /.idea/
