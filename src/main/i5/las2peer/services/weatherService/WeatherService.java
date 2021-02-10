@@ -54,9 +54,9 @@ public class WeatherService extends RESTService {
 	@GET
 	@Path("/{cityName}")
 	@Produces(MediaType.APPLICATION_JSON)
-	@ApiOperation(value = "Get Weather Data", notes = "Weather data")
+	@ApiOperation(value = "Get Information about the current Weather of a city", notes = "Weather data")
 	@ApiResponses(value = {
-			@ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Current Weather Data", response = WeatherData.class) })
+			@ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Get Information about the current Weather of a city", response = WeatherData.class) })
 	public Response getWeather(@PathParam("cityName") String cityName) {
 
 		System.out.println("called: " + cityName);
